@@ -13,6 +13,7 @@ import (
 
 type Handler struct {
     Store store.MenuStore
+    Tickets *auth.Issuer
 }
 
 func writeJSON(w http.ResponseWriter, status int, v any) {
